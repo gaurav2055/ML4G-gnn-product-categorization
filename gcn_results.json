@@ -1,0 +1,16 @@
+{
+  "model": "GCN",
+  "test_accuracy": 0.7667925953865051,
+  "val_accuracy": 0.8635481595993042,
+  "train_accuracy": 0.892015814781189,
+  "best_epoch": 350,
+  "training_time": 111.4845380783081,
+  "num_parameters": 14863,
+  "top1_acc": 0.7667925748351891,
+  "top3_acc": 0.9253737816610416,
+  "top5_acc": 0.9625153770936504,
+  "hidden_channels": 128,
+  "num_classes": 15,
+  "num_nodes": 284290,
+  "num_edges": 2942500
+}

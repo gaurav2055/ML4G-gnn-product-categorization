@@ -1,0 +1,17 @@
+{
+  "model": "MLP",
+  "subsample_size": 500000,
+  "train_accuracy": 0.7226120233535767,
+  "test_accuracy": 0.6192355751991272,
+  "val_accuracy": 0.6789596676826477,
+  "best_epoch": 343,
+  "training_time": 8.641919374465942,
+  "num_parameters": 31375,
+  "top1_acc": 0.619503674731098,
+  "top3_acc": 0.8465208339904741,
+  "top5_acc": 0.9214230514462354,
+  "hidden_channels": 128,
+  "num_classes": 15,
+  "num_nodes": 284290,
+  "random_seed": 42
+}

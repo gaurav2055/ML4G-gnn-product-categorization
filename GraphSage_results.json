@@ -1,0 +1,15 @@
+{
+  "model": "GraphSage",
+  "test_accuracy": 0.760878324508667,
+  "val_accuracy": 0.8666537404060364,
+  "best_epoch": 347,
+  "training_time": 128.1716547012329,
+  "num_parameters": 29583,
+  "top1_acc": 0.7605510519509194,
+  "top3_acc": 0.9163722676087437,
+  "top5_acc": 0.9574172791218497,
+  "hidden_channels": 128,
+  "num_classes": 15,
+  "num_nodes": 284290,
+  "num_edges": 2942500
+}
