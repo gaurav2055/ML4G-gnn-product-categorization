@@ -1,0 +1,172 @@
+{
+  "experiment": "Comprehensive Cold-Start Analysis",
+  "models_analyzed": [
+    "MLP",
+    "GCN",
+    "GraphSAGE",
+    "GraphSAINT-RW",
+    "GraphSAINT-Node"
+  ],
+  "dataset_info": {
+    "total_nodes": 284290,
+    "total_edges": 2942500,
+    "test_nodes": 253624,
+    "features": 100,
+    "classes": 15
+  },
+  "degree_statistics": {
+    "mean": 10.350346565246582,
+    "median": 5.0,
+    "min": 0.0,
+    "max": 1329.0,
+    "std": 18.492000579833984
+  },
+  "degree_strata": {
+    "isolated": {
+      "node_count": 37531,
+      "percentage": 13.201660276478243
+    },
+    "sparse": {
+      "node_count": 105331,
+      "percentage": 37.050546976678746
+    },
+    "moderate": {
+      "node_count": 104678,
+      "percentage": 36.82085194695557
+    },
+    "well_connected": {
+      "node_count": 36750,
+      "percentage": 12.92694079988744
+    }
+  },
+  "performance_by_strata": [
+    {
+      "stratum": "isolated",
+      "degree_range": "0.0",
+      "num_test_nodes": 37164,
+      "MLP_accuracy": 0.6017382740974426,
+      "GCN_accuracy": 0.5184856653213501,
+      "GraphSAGE_accuracy": 0.44540417194366455,
+      "GraphSAINT-RW_accuracy": 0.4140835404396057,
+      "GraphSAINT-Node_accuracy": 0.5652244091033936
+    },
+    {
+      "stratum": "sparse",
+      "degree_range": "1.0-5.0",
+      "num_test_nodes": 102142,
+      "MLP_accuracy": 0.6245619058609009,
+      "GCN_accuracy": 0.7577979564666748,
+      "GraphSAGE_accuracy": 0.7676274180412292,
+      "GraphSAINT-RW_accuracy": 0.7896360158920288,
+      "GraphSAINT-Node_accuracy": 0.7531182169914246
+    },
+    {
+      "stratum": "moderate",
+      "degree_range": "6.0-20.0",
+      "num_test_nodes": 92946,
+      "MLP_accuracy": 0.6174014806747437,
+      "GCN_accuracy": 0.8454155921936035,
+      "GraphSAGE_accuracy": 0.8474920392036438,
+      "GraphSAINT-RW_accuracy": 0.8632646799087524,
+      "GraphSAINT-Node_accuracy": 0.8295246362686157
+    },
+    {
+      "stratum": "well_connected",
+      "degree_range": "21.0-1329.0",
+      "num_test_nodes": 21372,
+      "MLP_accuracy": 0.6353639960289001,
+      "GCN_accuracy": 0.8997285962104797,
+      "GraphSAGE_accuracy": 0.8966872096061707,
+      "GraphSAINT-RW_accuracy": 0.9077297449111938,
+      "GraphSAINT-Node_accuracy": 0.8776904344558716
+    }
+  ],
+  "connectivity_threshold_analysis": [
+    {
+      "threshold": 0,
+      "num_test_nodes": 37164,
+      "MLP_accuracy": 0.6017382740974426,
+      "GCN_accuracy": 0.5184856653213501,
+      "GraphSAGE_accuracy": 0.44540417194366455,
+      "GraphSAINT-RW_accuracy": 0.4140835404396057,
+      "GraphSAINT-Node_accuracy": 0.5652244091033936
+    },
+    {
+      "threshold": 1,
+      "num_test_nodes": 68272,
+      "MLP_accuracy": 0.6141610145568848,
+      "GCN_accuracy": 0.6034977436065674,
+      "GraphSAGE_accuracy": 0.5720939636230469,
+      "GraphSAINT-RW_accuracy": 0.5675532817840576,
+      "GraphSAINT-Node_accuracy": 0.6356192827224731
+    },
+    {
+      "threshold": 2,
+      "num_test_nodes": 91948,
+      "MLP_accuracy": 0.6181319952011108,
+      "GCN_accuracy": 0.6431243419647217,
+      "GraphSAGE_accuracy": 0.621394693851471,
+      "GraphSAINT-RW_accuracy": 0.6244616508483887,
+      "GraphSAINT-Node_accuracy": 0.6656262278556824
+    },
+    {
+      "threshold": 3,
+      "num_test_nodes": 110690,
+      "MLP_accuracy": 0.6188635230064392,
+      "GCN_accuracy": 0.6658957600593567,
+      "GraphSAGE_accuracy": 0.6489114165306091,
+      "GraphSAINT-RW_accuracy": 0.6547746062278748,
+      "GraphSAINT-Node_accuracy": 0.6822386980056763
+    },
+    {
+      "threshold": 5,
+      "num_test_nodes": 139306,
+      "MLP_accuracy": 0.6184729933738708,
+      "GCN_accuracy": 0.6939542889595032,
+      "GraphSAGE_accuracy": 0.6816648244857788,
+      "GraphSAINT-RW_accuracy": 0.6894462704658508,
+      "GraphSAINT-Node_accuracy": 0.7029919624328613
+    },
+    {
+      "threshold": 10,
+      "num_test_nodes": 188433,
+      "MLP_accuracy": 0.6169461011886597,
+      "GCN_accuracy": 0.7289434671401978,
+      "GraphSAGE_accuracy": 0.72097247838974,
+      "GraphSAINT-RW_accuracy": 0.7312943935394287,
+      "GraphSAINT-Node_accuracy": 0.7315279245376587
+    },
+    {
+      "threshold": 20,
+      "num_test_nodes": 232252,
+      "MLP_accuracy": 0.6180441975593567,
+      "GCN_accuracy": 0.754568338394165,
+      "GraphSAGE_accuracy": 0.7480279803276062,
+      "GraphSAINT-RW_accuracy": 0.759007453918457,
+      "GraphSAINT-Node_accuracy": 0.7536253929138184
+    },
+    {
+      "threshold": 50,
+      "num_test_nodes": 251737,
+      "MLP_accuracy": 0.6198531985282898,
+      "GCN_accuracy": 0.7658706903457642,
+      "GraphSAGE_accuracy": 0.7596260905265808,
+      "GraphSAINT-RW_accuracy": 0.7706653475761414,
+      "GraphSAINT-Node_accuracy": 0.7635666728019714
+    }
+  ],
+  "isolated_nodes_analysis": {
+    "MLP": 0.6017382740974426,
+    "GCN": 0.5184856653213501,
+    "GraphSAGE": 0.44540417194366455,
+    "GraphSAINT-RW": 0.4140835404396057,
+    "GraphSAINT-Node": 0.5652244091033936
+  },
+  "baseline_accuracies": {
+    "MLP": 0.6192355751991272,
+    "GCN": 0.7668004631996155,
+    "GraphSAGE": 0.7608822584152222,
+    "GraphSAINT-RW": 0.7715397477149963,
+    "GraphSAINT-Node": 0.7640838623046875
+  }
+}
